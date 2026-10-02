@@ -1,39 +1,28 @@
-# Project name
+# kotlin-dsa-kata
 
-> One line: what this does and who it's for.
+Data structures and algorithms in **idiomatic Kotlin**, solved by *pattern* — each solution has tests, complexity notes and the trigger phrase that tells me which pattern to use.
 
-<!-- Badges: CI · release · live link -->
+## How this repo works
 
-## Problem — why this exists
-What hurt before this project? What did people do instead, and why wasn't that good enough?
-
-## Demo
-<!-- GIF / screenshot / video link -->
-
-## Architecture
-```mermaid
-flowchart LR
-  UI --> ViewModel --> Repository --> API[(API / DB)]
+```
+src/main/kotlin/patterns/<pattern>/LC<number>_<Name>.kt
+src/test/kotlin/patterns/<pattern>/LC<number>_<Name>Test.kt
+patterns/NOTES_TEMPLATE.md      ← copy into patterns/<pattern>/NOTES.md
+MISTAKES.md                     ← every wrong attempt, with the lesson
 ```
 
-## Tech stack
--
+## Pattern index
 
-## Key decisions & trade-offs
-| Decision | Why | What I gave up |
-|---|---|---|
-| | | |
+| Pattern | Trigger phrase (when to use it) | Problems | Status |
+|---|---|---|---|
+| Prefix sum + hash map | "count subarrays with sum = k" | LC 560 | ⬜ |
+| Sliding window | "longest / shortest substring or subarray with a condition" | LC 3 | ⬜ |
+| Two pointers | "sorted array, find pairs / triplets" | LC 15 | ⬜ |
+| Binary search | _fill in_ | | ⬜ |
 
-## Numbers
-<!-- startup ms, build time, eval score, latency… measured, never guessed -->
+## Rules
 
-## How to run
-```bash
-# steps
-```
-
-## What I learned
--
-
-## Roadmap
-- [ ]
+1. Try 20 minutes honestly before looking at hints.
+2. Write the test first, including edge cases.
+3. State time and space complexity in a comment.
+4. Add a line to `MISTAKES.md` for every wrong attempt.
