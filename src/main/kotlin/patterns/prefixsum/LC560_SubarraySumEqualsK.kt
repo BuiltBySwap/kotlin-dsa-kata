@@ -8,20 +8,12 @@ package patterns.prefixsum
 fun subarraySum(nums: IntArray, k: Int): Int {
     var prefixSum = 0
     var count = 0
-
-    val prefixSumFrequency = HashMap<Int, Int>()
-    prefixSumFrequency[0] = 1
+    val seen = hashMapOf(0 to 1)                    // prefix sum -> times seen so far
 
     for (number in nums) {
         prefixSum += number
-
-        val requiredPrefixSum = prefixSum - k
-
-        count += prefixSumFrequency.getOrDefault(requiredPrefixSum, 0)
-
-        prefixSumFrequency[prefixSum] =
-            prefixSumFrequency.getOrDefault(prefixSum, 0) + 1
+        count += seen[prefixSum - k] ?: 0           // count first...
+        seen[prefixSum] = (seen[prefixSum] ?: 0) + 1  // ...then record this prefix
     }
-
     return count
 }
