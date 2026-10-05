@@ -9,4 +9,5 @@ class LC560_SubarraySumEqualsKTest {
     @Test fun withNegatives() = assertEquals(3, subarraySum(intArrayOf(1, -1, 0), 0))
     @Test fun single() = assertEquals(1, subarraySum(intArrayOf(5), 5))
     @Test fun none() = assertEquals(0, subarraySum(intArrayOf(5), 3))
+    @Test fun slidingWindowTrap() = assertEquals(1, subarraySum(intArrayOf(5, -3), 2))
 }
