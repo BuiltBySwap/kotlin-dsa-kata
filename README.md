@@ -19,6 +19,7 @@ MISTAKES.md                     ← every wrong attempt, with the lesson
 | Sliding window | "longest / shortest substring or subarray with a condition" | LC 3 | ⬜ |
 | Two pointers | "sorted array, find pairs / triplets" | LC 15 | ⬜ |
 | Binary search | _fill in_ | | ⬜ |
+| Binary search on the answer | "the smallest value such that X works", "minimise the maximum" | LC 875, LC 1011 | ✅ |
 
 ## Rules
 
